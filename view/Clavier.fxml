@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arezzo.view.VueClavier">
+  <children>
+            <Button fx:id="Re" layoutX="46.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheRe" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Mi" layoutX="86.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheMi" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Fa" layoutX="126.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheFa" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Sol" layoutX="166.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheSol" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="La" layoutX="206.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheLa" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Si" layoutX="246.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheSi" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Do" layoutX="6.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheDo" prefHeight="196.0" prefWidth="40.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Button fx:id="Do2" layoutX="34.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheDodiese" prefHeight="134.0" prefWidth="25.0" style="-fx-background-color: black;" />
+            <Button fx:id="Re2" layoutX="74.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheRediese" prefHeight="134.0" prefWidth="25.0" style="-fx-background-color: black;" />
+            <Button fx:id="Fa2" layoutX="154.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheFadiese" prefHeight="134.0" prefWidth="25.0" style="-fx-background-color: black;" />
+            <Button fx:id="Sol2" layoutX="194.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheSoldiese" prefHeight="134.0" prefWidth="25.0" style="-fx-background-color: black;" />
+            <Button fx:id="La2" layoutX="234.0" layoutY="160.0" mnemonicParsing="false" onAction="#toucheLadiese" prefHeight="134.0" prefWidth="25.0" style="-fx-background-color: black;" />
+            <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="318.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/ronde.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="322.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/blanche.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="322.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/noire.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="321.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/croche.png" />
+               </image>
+            </ImageView>
+      <RadioButton layoutX="292.0" layoutY="160.0" mnemonicParsing="false" onAction="#estaigu" text="aigu">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="292.0" layoutY="189.0" mnemonicParsing="false" onAction="#estmedium" selected="true" text="medium" toggleGroup="$group1" />
+      <RadioButton layoutX="292.0" layoutY="218.0" mnemonicParsing="false" onAction="#estgrave" text="grave" toggleGroup="$group1" />
+      <RadioButton layoutX="293.0" layoutY="245.0" mnemonicParsing="false" onAction="#estronde">
+         <toggleGroup>
+            <ToggleGroup fx:id="group2" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="293.0" layoutY="276.0" mnemonicParsing="false" onAction="#estblanche" toggleGroup="$group2" />
+      <RadioButton layoutX="293.0" layoutY="310.0" mnemonicParsing="false" selected="true" toggleGroup="$group2" />
+      <RadioButton layoutX="293.0" layoutY="338.0" mnemonicParsing="false" onAction="#estcroche" toggleGroup="$group2" />
+
+  </children>
+</Pane>
